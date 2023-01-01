@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' exact element={<Pocetna />} />
+          <Route path='/' exact element />
         </Routes>
       </Router>
     </div>

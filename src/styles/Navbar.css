@@ -28,8 +28,8 @@ Boje
     flex: 50%;
     height: 100%;
     display: flex;
-    align-items: right;
-    justify-content: right;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar a {
@@ -81,7 +81,10 @@ Boje
     }
 
     .navbar .left-column {
-        padding-left: 50px;
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
