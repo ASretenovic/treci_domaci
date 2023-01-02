@@ -9,7 +9,7 @@ function Pocetna() {
       <div className='headerContainer' >
         <h1> Milsan baštenski svet </h1>
         <p> Mesto gde Vaša bašta iz snova postaje stvarnost </p>
-        <Link to='/kategorije'>
+        <Link to='/proizvodi'>
           <button> Otkrijte Milsan kategorije </button>
         </Link>
       </div>

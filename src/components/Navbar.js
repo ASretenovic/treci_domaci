@@ -20,7 +20,7 @@ function Navbar() {
               <div className='hiddenLinks'>
                 {/* linkovi koji ce se prikazivati samo kad se smanji rezolucija */}
                 <Link to='/'>Početna</Link>
-                <Link to='/kategorije'>Kategorije</Link>
+                <Link to='/proizvodi'>Proizvodi</Link>
                 <Link to='/kontakt'>Kontakt</Link>
                 <Link to='/oNama'>O nama</Link>
               </div>
@@ -28,7 +28,7 @@ function Navbar() {
 
             <div className='right-column'>
               <Link to='/'>Početna</Link>
-              <Link to='/kategorije'>Kategorije</Link>
+              <Link to='/proizvodi'>Proizvodi</Link>
               <Link to='/kontakt'>Kontakt</Link>
               <Link to='/oNama'>O nama</Link>
               <button onClick={manageNavbar}>
