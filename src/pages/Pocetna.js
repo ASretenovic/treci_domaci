@@ -10,7 +10,7 @@ function Pocetna() {
         <h1> Milsan baštenski svet </h1>
         <p> Mesto gde Vaša bašta iz snova postaje stvarnost </p>
         <Link to='/proizvodi'>
-          <button> Otkrijte Milsan kategorije </button>
+          <button> Otkrijte Milsan proizvode </button>
         </Link>
       </div>
     </div>
