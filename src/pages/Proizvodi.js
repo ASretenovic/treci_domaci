@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ProizvodiList } from '../handler/ProizvodiList';
-import ProizvodiItem from '../components/ProizvodiItem';
+import  ProizvodiItem from '../components/ProizvodiItem';
 import '../styles/Proizvodi.css';
 
 function Proizvodi() {
@@ -30,15 +30,19 @@ function Proizvodi() {
       <div className='proizvodi'>
           <h1 className='h1proizvodi'>Naši proizvodi</h1>
            {/* prolazak kroz listu proizvoda */}
-          <div className='proizvodiList'>{data.map((proizvodiItem, key) => {
-              return <ProizvodiItem
-                  key={key}
-                  slika={proizvodiItem.slika}
-                  naziv={proizvodiItem.naziv}
-                  cena={proizvodiItem.cena} />
-          })}
+        <div className='proizvodiList'>{data.map((proizvodiItem, key) => {
+          return (<ProizvodiItem
+            key={key}
+            id = {proizvodiItem.id}
+            slika={proizvodiItem.slika}
+            naziv={proizvodiItem.naziv}
+            cena={proizvodiItem.cena}
+          />
+          )
+        })}
           </div>
       </div>
+
     </div>
   )
 }

@@ -107,6 +107,18 @@
     margin-left: 20px;
 }
 
+.dodajKorpa{
+    margin-left: 80px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #50808E;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 1300px) {
     .proizvodiList {
         grid-template-columns: 1fr 1fr;

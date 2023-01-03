@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import logo from '../images/milsanLogo.png';
 import { Link } from 'react-router-dom';
 import ReorderIcon from '@mui/icons-material/Reorder';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import '../styles/Navbar.css';
 
 function Navbar() {
@@ -23,14 +24,17 @@ function Navbar() {
                 <Link to='/proizvodi'>Proizvodi</Link>
                 <Link to='/kontakt'>Kontakt</Link>
                 <Link to='/oNama'>O nama</Link>
+                <Link to='/kolica'>Kolica</Link>
               </div>
             </div>
 
-            <div className='right-column'>
+      <div className='right-column'>
               <Link to='/'>Početna</Link>
               <Link to='/proizvodi'>Proizvodi</Link>
               <Link to='/kontakt'>Kontakt</Link>
               <Link to='/oNama'>O nama</Link>
+              <Link to='/kolica'>Kolica</Link>
+              <Link to='/kolica'><ShoppingCartIcon /></Link>
               <button onClick={manageNavbar}>
                   <ReorderIcon />
               </button>
