@@ -17,7 +17,7 @@ function Navbar() {
   return (
     <div className='navbar'>
           <div className='left-column' id={activeLinks ? 'open' : 'close'}>
-              <img src={logo} />
+        <img src={logo} alt='logo' />
               <div className='hiddenLinks'>
                 {/* linkovi koji ce se prikazivati samo kad se smanji rezolucija */}
                 <Link to='/'>Početna</Link>

@@ -8,11 +8,19 @@ import '../styles/Footer.css';
 function Footer() {
   return (
       <div className='footer'>
-          <div className='socialMediaIcons'>
-              <InstagramIcon />
-              <FacebookIcon />
-              <TwitterIcon />
-              <PinterestIcon />
+        <div className='socialMediaIcons'>
+          <a href='https://www.instagram.com/'>
+            <InstagramIcon />
+          </a>
+          <a href='https://www.facebook.com/'>
+            <FacebookIcon />
+          </a>
+          <a href='https://twitter.com/'>
+            <TwitterIcon />
+          </a>
+          <a href='https://www.pinterest.com/'>
+            <PinterestIcon />
+            </a>
           </div>
           <p> &copy; 2023 Milsan</p>
     </div>

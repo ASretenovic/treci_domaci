@@ -10,7 +10,7 @@
 .oNamaLeftColumn {
     height: 100%;
     display: flex;
-    flex: 50%;
+    flex: 5%;
     background-position: center;
     background-size: cover;
 }
@@ -25,16 +25,91 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.oNamaRightColumn p {
-    width: 1200px;
+
+.tabs{
+    display: flex;
 }
 
-.oNama .oNamaRightColumn h1 {
-    font-weight: 400;
-    font-size: 60px;
+.singleTab{
+    margin-right: 10px;
+    width: 220px;
+    cursor: pointer;
+    background-color: #50808E;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.singleTab h3{
+    display: block;
+    padding: 10px 16px;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+}
+
+.content{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+.activeContent{
+    display: block;   
+}
+
+.activeTab{
+    position: relative;
+    background-color: #fcbc3e;
+}
+
+.activeTab::before{
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #fcbc3e transparent transparent transparent;
+}
+
+.content h3{
+    font-size: 27px;
+    font-weight: 1000;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    margin-left: 50px;
     color: #50808E;
+}
+
+.content p{
+    padding-bottom: 1rem;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    color:#50808E;
+}
+
+.content button{
+    display: block;
+    margin: 0;
+    width: 200px;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    transform: translateY(-40px);
+    border: none;
+    margin: 20px;
+    background-color: #50808E;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+}
+
+.content button:hover {
+    background-color: #fcbc3e;
+    cursor: pointer;
+    transition: 0.3s ease-in;
 }

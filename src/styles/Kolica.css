@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+.kolica h2{
+    color: #50808E;
+}
+
 .kolicaItem {
   width: 700px;
   height: 250px;
@@ -18,26 +22,66 @@
 
 .kolicaItem img {
   width: 160px;
+  margin-left: 20px;
+  border-radius: 8px;
 }
 
 .kolicaItem .description {
   width: 100%;
   font-size: 30px;
+  color: #50808E;
 }
 
-.countHandler input {
-  width: 40px;
+.kolicinaHandler input {
+  width: 55px;
+  height: 25px;
   text-align: center;
   font-weight: bolder;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-color: #50808E;
+  border-radius: 5px;
 }
 
-.checkout button {
+.kolicinaHandler button{
+    background-color: #50808E;
+    color: white;
+    width: 40px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.kolicaCheckout button {
   width: 150px;
   height: 50px;
-  background-color: rgb(19, 19, 19);
+  background-color: #50808E;
   color: white;
   border: none;
   border-radius: 8px;
-  margin: 10px;
+  margin: 8px;
   cursor: pointer;
+}
+
+.praznaKolica{
+    margin-top: 120px;
+}
+
+.praznaKolica button{
+    width: 150px;
+    height: 50px;
+    background-color: #50808E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-left: 35px;
+    margin-bottom: 200px;
+    cursor: pointer;
+}
+
+.kolicaCheckout p{
+    text-align: center;
+    color: #50808E;
+    font-weight: bold;
 }

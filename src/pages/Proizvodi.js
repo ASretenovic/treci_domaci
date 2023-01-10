@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import { ProizvodiList } from '../handler/ProizvodiList';
 import  ProizvodiItem from '../components/ProizvodiItem';
 import '../styles/Proizvodi.css';
+import Paginacija from '../components/Paginacija';
+import { paginationItemClasses } from '@mui/material';
 
 function Proizvodi() {
 
   const [data, setData] = useState(ProizvodiList);
 
+
   const filterKategorija = (nazivKategorije) => {
-    const result = ProizvodiList.filter ((currentValue) => {
+    const result = data.filter((currentValue) => {
       return currentValue.kategorija === nazivKategorije;
     })
     setData(result);
@@ -16,8 +19,7 @@ function Proizvodi() {
 
   return (
     <div className='proizvodiContainer'>
-
-      <div className='kategorije'>
+        <div className='kategorije'>
         <div>
           <h2>Kategorije</h2>
           <button className='btnKategorija' onClick={() => filterKategorija('Baštenski nameštaj')}>Baštenski nameštaj</button>
@@ -27,9 +29,9 @@ function Proizvodi() {
         </div>
       </div>
 
-      <div className='proizvodi'>
+        <div className='proizvodi'>
           <h1 className='h1proizvodi'>Naši proizvodi</h1>
-           {/* prolazak kroz listu proizvoda */}
+          {/* prolazak kroz listu proizvoda */}
         <div className='proizvodiList'>{data.map((proizvodiItem, key) => {
           return (<ProizvodiItem
             key={key}
@@ -43,7 +45,7 @@ function Proizvodi() {
           </div>
       </div>
 
-    </div>
+      </div>
   )
 }
 

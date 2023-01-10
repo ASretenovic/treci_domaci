@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { ProizvodiContext } from '../context/ProizvodiContext';
+import '../styles/Kolica.css';
 
 export const KolicaItem = (props) => {
 

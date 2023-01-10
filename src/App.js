@@ -8,9 +8,6 @@ import ONama from './pages/ONama';
 import Kontakt from './pages/Kontakt';
 import { ProizvodiContextProvider } from './context/ProizvodiContext';
 import { Kolica } from './pages/Kolica';
-//import { Kolica } from './pages/Kolica';
-
-// 
 
 function App() {
   return (
@@ -22,8 +19,8 @@ function App() {
           <Route path='/' exact element={<Pocetna />} />
           <Route path='/proizvodi' exact element={<Proizvodi />} />
           <Route path='/kontakt' exact element={<Kontakt />} />
-            <Route path='/oNama' exact element={<ONama />} />
-            <Route path='/kolica' exact element={<Kolica />}/>
+          <Route path='/oNama' exact element={<ONama />} />
+          <Route path='/kolica' exact element={<Kolica />}/>
         </Routes>
         <Footer />
         </Router>

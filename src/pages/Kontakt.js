@@ -18,8 +18,7 @@ function Kontakt() {
               </form>
           </div>
 
-          <div className='kontaktRightColumn' style={{ backgroundImage : `url(${oNamaImage})` }}>
-          </div>
+          <div className='kontaktRightColumn' style={{ backgroundImage : `url(${oNamaImage})` }}></div>
     </div>
   )
 }

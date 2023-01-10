@@ -26,10 +26,21 @@ export const ProizvodiContextProvider = (props) => {
         setKolicaItems((prev) => ({ ...prev, [proizvodId]: prev[proizvodId] - 1 }))
     };
 
-    const contexValue = { kolicaItems, dodajUKolica, izbrisiIzKolica };
 
+    const ukupnoZaPlacanje = () => {
+        let ukupno = 0;
+        for (const item in kolicaItems) {
+            if (kolicaItems[item] > 0) {
+                let cenaProizvoda = ProizvodiList.find((proizvod) => proizvod.id === Number(item));    // vraca ceo proizvod ciji je id = item
+                ukupno = ukupno + kolicaItems[item] * cenaProizvoda.cena;           // kolicina proizvoda * cena
+            }
+        }
+        return ukupno;
+    };
 
-    console.log(kolicaItems);
+    const contexValue = { kolicaItems, dodajUKolica, izbrisiIzKolica,  ukupnoZaPlacanje};
+
+    //console.log(kolicaItems);
 
     return <ProizvodiContext.Provider value={contexValue}>{props.children}</ProizvodiContext.Provider>
 }
